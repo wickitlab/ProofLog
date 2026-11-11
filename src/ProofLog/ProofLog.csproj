@@ -15,8 +15,8 @@
     <PackageTags>audit-log;tamper-evident;hash-chain;compliance;cra;dora;nis2;eu-ai-act;sqlite;security;evidence</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/w1ck3ds0d4/ProofLog</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/w1ck3ds0d4/ProofLog</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wickitlab/ProofLog</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/wickitlab/ProofLog</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>

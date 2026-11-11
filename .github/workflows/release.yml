@@ -6,7 +6,7 @@
 #
 # One-time setup on nuget.org (Account -> Trusted Publishing -> Add):
 #   Package owner:   w1ck3ds0d4
-#   Repository:      w1ck3ds0d4/ProofLog
+#   Repository:      wickitlab/ProofLog
 #   Workflow file:   release.yml
 #   Environment:     (leave empty)
 #

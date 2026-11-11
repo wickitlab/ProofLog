@@ -10,7 +10,7 @@ It is the open-source core of the CRADesk compliance line and the tamper-evident
 >
 > **Known advisory (transitive).** Via `Microsoft.Data.Sqlite` this package pulls `SQLitePCLRaw.*.e_sqlite3`, covered by **CVE-2025-6965** (a SQLite memory-corruption bug fixed in SQLite 3.50.2). As of 2026-07 no patched SQLitePCLRaw release exists on the referenced line. ProofLog is **not affected in normal use**: it executes only its own fixed-schema, parameterized queries and never runs caller- or attacker-supplied SQL, so the vulnerable aggregate-query path is not reachable. The dependency is pinned to the newest maintained build (10.0.10) and will be bumped when SQLitePCLRaw ships the SQLite 3.50.2 fix.
 
-[![CI](https://github.com/w1ck3ds0d4/ProofLog/actions/workflows/ci.yml/badge.svg)](https://github.com/w1ck3ds0d4/ProofLog/actions/workflows/ci.yml)
+[![CI](https://github.com/wickitlab/ProofLog/actions/workflows/ci.yml/badge.svg)](https://github.com/wickitlab/ProofLog/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/ProofLog.svg)](https://www.nuget.org/packages/ProofLog/)
 [![Downloads](https://img.shields.io/nuget/dt/ProofLog.svg)](https://www.nuget.org/packages/ProofLog/)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
