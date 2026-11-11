@@ -5,8 +5,19 @@ All notable changes to ProofLog are documented here. The format is based on
 semantic versioning.
 
 ## [Unreleased]
+
+## [0.4.1] - v0.4.1
+The first release published to nuget.org.
+
+### Changed
 - Sqlite dependency modernization and evidence-claim corrections (#11)
 - Standard actions: CI, security scan, monthly Dependabot (#13)
+- Dependency patch updates (#14, #21, #24)
+- Repository and package links point at the wickitlab organization (#23)
+- The package author is WickIT Lab, and releases publish through NuGet Trusted Publishing instead of a stored API key
+
+### Fixed
+- The Append, Verify and Audit extensions guard against null arguments
 
 ## [0.4.0] - v0.4
 ### Added

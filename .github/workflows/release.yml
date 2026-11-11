@@ -4,11 +4,12 @@
 # exchanges a short-lived GitHub OIDC token for a temporary NuGet key at run time, so
 # no secret is ever stored in this repository.
 #
-# One-time setup on nuget.org (Account -> Trusted Publishing -> Add):
-#   Package owner:   w1ck3ds0d4
-#   Repository:      wickitlab/ProofLog
-#   Workflow file:   release.yml
-#   Environment:     (leave empty)
+# One-time setup on nuget.org (your username -> Trusted Publishing -> add a policy):
+#   Package owner:     W1ck3dS0d4
+#   Repository Owner:  wickitlab
+#   Repository:        ProofLog
+#   Workflow File:     release.yml
+#   Environment:       (leave empty)
 #
 # Until that policy exists the login step fails, so the job still builds, tests and packs
 # the tag and uploads the .nupkg as an artifact, and only the publish step is skipped.
@@ -52,7 +53,7 @@ jobs:
         continue-on-error: true
         uses: NuGet/login@8d196754b4036150537f80ac539e15c2f1028841 # v1
         with:
-          user: w1ck3ds0d4
+          user: W1ck3dS0d4   # the nuget.org username, in its exact casing
 
       - name: Push to NuGet
         if: steps.login.outcome == 'success'
