@@ -95,7 +95,12 @@ public abstract class ProofLogBase : IProofLog
     public long Count() => CountCore();
 
     /// <inheritdoc />
-    public IReadOnlyList<ProofRecord> Read(long fromSeq = 1, int? limit = null) => ReadRange(fromSeq, limit);
+    /// <exception cref="ArgumentOutOfRangeException">A negative <paramref name="limit"/>; the two stores would otherwise disagree on it.</exception>
+    public IReadOnlyList<ProofRecord> Read(long fromSeq = 1, int? limit = null)
+    {
+        if (limit is int l) ArgumentOutOfRangeException.ThrowIfNegative(l);
+        return ReadRange(fromSeq, limit);
+    }
 
     /// <summary>The clock used for timestamps; overridable for deterministic tests.</summary>
     protected virtual DateTimeOffset UtcNow() => DateTimeOffset.UtcNow;
